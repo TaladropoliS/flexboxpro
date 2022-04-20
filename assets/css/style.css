@@ -66,7 +66,7 @@
 }
 
 .column {
-    padding: 0 0 10px 0;
+    padding: 0;
 }
 
 /* Left column */
@@ -127,11 +127,12 @@ p {
     margin-left: 0;
     border-right: 1px solid #828485;
     border-bottom: 1px solid #828485;
+    border-top: 1px solid #828485;
 }
 
 .imgPerfilUno {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #828485;
     margin-right: 10px;
@@ -146,7 +147,7 @@ p {
 
 .iconos {
     color: #828485;
-    padding: 30px 5px 5px 5px ;
+    padding: 30px 5px 5px 5px;
 }
 
 .nuevoChat {
@@ -159,12 +160,19 @@ p {
     border-bottom: 1px solid #828485;
 }
 
+.nuevoChat > .btn > p {
+    font-weight: lighter;
+}
+
 .btn {
     background-color: #A491D2;
     color: white;
-    padding: 15px 50px 15px 50px;
+    padding: 10px 50px 10px 50px;
 }
 
+.btn:hover {
+    background-color: #CDC3E6;
+}
 
 /* CONTACTOS */
 .contactos {
@@ -177,8 +185,8 @@ p {
 }
 
 .imgContactos {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #828485;
     margin-right: 10px;
@@ -219,6 +227,15 @@ p {
         order: 2;
     }
 
+    .imgPerfilUno {
+        width: 55px;
+        height: 55px;
+    }
+
+    .imgContactos {
+        width: 55px;
+        height: 55px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -245,6 +262,16 @@ p {
         -webkit-flex-direction: row;
         flex-direction: row;
     }
+
+    .imgPerfilUno {
+        width: 60px;
+        height: 60px;
+    }
+
+    .imgContactos {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -270,5 +297,15 @@ p {
         display: flex;
         -webkit-flex-direction: row;
         flex-direction: row;
+    }
+
+    .imgPerfilUno {
+        width: 65px;
+        height: 65px;
+    }
+
+    .imgContactos {
+        width: 65px;
+        height: 65px;
     }
 }
