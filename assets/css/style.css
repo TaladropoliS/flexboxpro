@@ -1,11 +1,11 @@
 /* fonts */
 @font-face {
-    font-family: ”Open Sans”;
+    font-family: 'Open Sans';
     src: url('../fonts/Open_Sans') format('Truetype');
 }
 
 @font-face {
-    font-family: ”Roboto”;
+    font-family: 'Roboto';
     src: url('../fonts/Roboto') format('Truetype');
 }
 
