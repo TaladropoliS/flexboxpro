@@ -1,0 +1,63 @@
+/* fonts */
+@font-face {
+    font-family: ”Open Sans”;
+    src: url('../fonts/Open_Sans') format('Truetype');
+}
+
+@font-face {
+    font-family: ”Roboto”;
+    src: url('../fonts/Roboto') format('Truetype');
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.openSans-xl {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+}
+
+.openSans-md {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.openSans-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.openSans-xs {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+.roboto-xl {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+}
+
+.roboto-md {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.roboto-sm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.roboto-xs {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.item-flex {
+    flex-flow: wrap column;
+}
