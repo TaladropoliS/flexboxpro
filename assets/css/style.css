@@ -66,7 +66,7 @@
 }
 
 .column {
-    padding: 10px;
+    padding: 0 0 10px 0;
 }
 
 /* Left column */
@@ -83,6 +83,7 @@
     -ms-flex: 1;
     flex: 1;
     order: 1;
+    height: 100vh;
 }
 
 /* contenido COLUMNA CENTRAL column middle */
@@ -116,35 +117,81 @@ p {
 
 /* contenido COLUMNA COSTADO column side */
 .perfil {
-    /*height: 100%;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 0;
     border-right: 1px solid #828485;
+    border-bottom: 1px solid #828485;
 }
 
 .imgPerfilUno {
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    border: 1px solid #828485;
+    margin-right: 10px;
 }
 
 .perfilUser {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.perfilUser > p {
     margin-left: 10px;
 }
 
 .iconos {
     color: #828485;
-    padding: 10px 5px 5px 5px ;
+    padding: 30px 5px 5px 5px ;
 }
 
+.nuevoChat {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    height: 120px;
+    border-right: 1px solid #828485;
+    border-bottom: 1px solid #828485;
+}
+
+.btn {
+    background-color: #A491D2;
+    color: white;
+    padding: 15px 50px 15px 50px;
+}
+
+
+/* CONTACTOS */
+.contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 10px;
+    margin-left: 0;
+}
+
+.imgContactos {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #828485;
+    margin-right: 10px;
+}
+
+.perfilContacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #828485;
+    border-right: 1px solid #828485;
+}
 
 
 @media (min-width: 576px) {
@@ -185,9 +232,9 @@ p {
 
     /* Middle column */
     .column.middle {
-        -webkit-flex: 3;
-        -ms-flex: 3;
-        flex: 3;
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
         order: 2;
     }
 
@@ -211,9 +258,9 @@ p {
 
     /* Middle column */
     .column.middle {
-        -webkit-flex: 4;
-        -ms-flex: 4;
-        flex: 4;
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
         order: 2;
     }
 
